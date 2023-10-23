@@ -895,7 +895,7 @@ honey.eat()
 --
 
 .piglet[
-![Person on the right](./images/Piglet-Sad.png)
+![Person on the right](./images/Piglet-sad.png)
 ]
 
 ---
@@ -903,7 +903,7 @@ honey.eat()
 # What went wrong?
 
 .piglet[
-![Person on the right](./images/Piglet-Sad.png)
+![Person on the right](./images/Piglet-sad.png)
 ]
 
 Two ingredients:
