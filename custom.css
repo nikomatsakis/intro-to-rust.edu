@@ -1,3 +1,9 @@
+/*
+Useful resources
+
+https://projects.verou.me/bubbly/ -- speech bubbles!
+*/
+
 @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300,300italic,600,400italic,600italic,700italic,800italic);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
@@ -34,6 +40,14 @@ h3 {
 
 .grey a {
   color: grey;
+}
+
+.large {
+  font-size: 200%;
+}
+
+.huge {
+  font-size: 300%;
 }
 
 .small {
@@ -249,6 +263,15 @@ mark,
   font-size: 0.5em;
 }
 
+.p10 img {
+  width: 10%;
+}
+
+
+.p20 img {
+  width: 20%;
+}
+
 .p80 img {
   width: 80%;
 }
@@ -444,9 +467,37 @@ mark,
   width: 50px;
 }
 
+.line6 img {
+  position: absolute;
+  top: 270px;
+  left: 10px;
+  width: 50px;
+}
+
 .line7 img {
   position: absolute;
   top: 300px;
+  left: 10px;
+  width: 50px;
+}
+
+.line8 img {
+  position: absolute;
+  top: 330px;
+  left: 10px;
+  width: 50px;
+}
+
+.line9 img {
+  position: absolute;
+  top: 360px;
+  left: 10px;
+  width: 50px;
+}
+
+.line10 img {
+  position: absolute;
+  top: 390px;
   left: 10px;
   width: 50px;
 }
@@ -468,6 +519,7 @@ mark,
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 75%;
   transform: translateY(-50%) translateX(-50%);
 }
 
@@ -522,6 +574,15 @@ blockquote p {
 
 .group {}
 
+.column10 {
+  float: left;
+  width: 10%;
+}
+
+.column20 {
+  float: left;
+  width: 20%;
+}
 
 .column30 {
   float: left;
@@ -597,6 +658,41 @@ blockquote p {
   color: white;
 }
 
+.speech-bubble.barbara {
+  background: #b82c7b;
+}
+
+.speech-bubble.barbara.left:after {
+  border-right-color: #b82c7b;
+}
+
+.speech-bubble.barbara.right:after {
+  border-left-color: #b82c7b;
+}
+
+.speech-bubble.ferris {
+  background: #f14527;
+}
+
+.speech-bubble.ferris.right:after {
+  border-left-color: #f14527;
+}
+
+.speech-bubble.ferris.topright:after {
+  border-bottom-color: #f14527;
+}
+
+.speech-bubble.alan {
+  background: #5914b8;
+}
+
+.speech-bubble.alan.right:after {
+  border-left-color: #5914b8;
+}
+
+.speech-bubble.alan.topright:after {
+  border-bottom-color: #5914b8;
+}
 
 .speech-bubble.left:after {
   content: '';
@@ -644,47 +740,110 @@ blockquote p {
   transform: scale(-1, 1);
 }
 
-
-.speech-bubble.barbara {
-  background: #b82c7b;
+.thought.barbara {
+  background-color: #b82c7b;
+  border-radius: 50%;
+  display: inline-block;
 }
 
-.speech-bubble.barbara.left:after {
-  border-right-color: #b82c7b;
+.thought.bubble1 {
+  height: 50px;
+  width: 50px;
 }
 
-.speech-bubble.barbara.right:after {
-  border-left-color: #b82c7b;
+.thought.bubble2 {
+  height: 35px;
+  width: 35px;
 }
 
-.speech-bubble.barbara.topright:after {
-  border-bottom-color: #b82c7b;
+.thought.bubble3 {
+  height: 25px;
+  width: 25px;
 }
 
-.speech-bubble.ferris {
-  background: #f14527;
+
+
+
+
+
+.pooh img {
+  height: 275px;
+  position: absolute;
+  bottom: 75px;
+  left: 125px;
 }
 
-.speech-bubble.ferris.left:after {
-  border-left-color: #f14527;
+.piglet img {
+  height: 275px;
+  position: absolute;
+  bottom: 75px;
+  right: 125px;
 }
 
-.speech-bubble.ferris.right:after {
-  border-left-color: #f14527;
+.pooh-center img {
+  height: 275px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-125%);
 }
 
-.speech-bubble.ferris.topright:after {
-  border-bottom-color: #f14527;
+.honey-left {
+  font-size: 300%;
+  position: absolute;
+  bottom: 100px;
+  left: 325px;
 }
 
-.speech-bubble.alan.left:after {
-  border-left-color: #5914b8;
+.honey-center {
+  font-size: 300%;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.speech-bubble.alan.right:after {
-  border-left-color: #5914b8;
+.honey-center-tip {
+  font-size: 300%;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%) rotate(90deg);
 }
 
-.speech-bubble.alan.left:after {
-  border-right-color: #5914b8;
+.honey-right {
+  font-size: 300%;
+  position: absolute;
+  bottom: 100px;
+  right: 350px;
+}
+
+.piglet-center img {
+  height: 275px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(25%);
+}
+
+.redpen {
+  color: red;
+}
+
+.digression div {
+  background-color: purple;
+  color: #fff;
+
+  border-radius: 2em;
+  border: solid 0.3em rgb(64, 2, 64);
+}
+
+.batgirlcircle {
+  position: absolute;
+  top: 330px;
+  left: 90px;
+  border-radius: 50%;
+  width: 125px;
+  height: 75px;
+  border: 10px solid red;
 }

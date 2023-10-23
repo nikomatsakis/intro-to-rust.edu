@@ -1,3 +1,3 @@
-# Talk template
+# ECE290
 
-Clone this repo for new talks
+A talk given to ECE290 from UCSC.
