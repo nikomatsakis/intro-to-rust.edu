@@ -9,7 +9,7 @@ count: false
 .me[.grey[*by* **Nicholas Matsakis**]]
 
 .footnote[
-    Online on Github at [nikomatsakis/ECE290-2023](https://github.com/nikomatsakis/ECE290-2023) -- in [rendered form too!](https://nikomatsakis.github.io/ECE290-2023/#1)
+    Online on Github at [nikomatsakis/intro-to-rust.edu](https://github.com/nikomatsakis/ECE290-2023) -- in [rendered form too!](https://nikomatsakis.github.io/intro-to-rust.edu/)
 ]
 
 ---
@@ -93,11 +93,11 @@ Or maybe you yourself are not convinced, and you'd like to know what all the fus
 
 > **Our decision to use Rust was about tail latency.** We didn’t want the tail latency. The better tail latencies with Rust were crazy significant.
 > <br><br>
-> .small[— AWS Lambda Principal Engineer, 2022]
+> .small[— Rust developer, 2022]
 
 ???
 
-To answer that, I think you have to break the question into two questions. The first one is why do they *start* using Rust. And for many, the answer is "performance" -- that's what gets people's attention. Look at this quote from a Lambda PE: when Lambda was building their new sandbox assignment service, they were primarily looking to achieve tighter tail latencies, and they found that since Rust didn't require a garbage collector, it offered a big advantage in that regard.
+To answer that, I think you have to break the question into two questions. The first one is why do they *start* using Rust. And for many, the answer is "performance" -- that's what gets people's attention. Look at this quote from an experience Rust developer. The reason they picked up Rust was that they were looking to achieve tighter tail latencies, and they found that since Rust didn't require a garbage collector, it offered a big advantage in that regard.
 
 Or, to put it in picture form...
 
@@ -121,11 +121,11 @@ Or, to put it in picture form...
 
 > **If we were to make it again, the other reason is correctness.** A lot of our worst outages have been about unexpected exceptions. In Rust, every error response is enumerated in the type system and there’s the right syntactical goodness to handle it without being heavy weight. That is really nice.
 > <br><br>
-> .small[— AWS Lambda Principal Engineer, 2022 (same interview)]
+> .small[— Same Rust developer, 2022]
 
 ???
 
-Here is that same Lambda PE, continuing their statement. See what he is saying here? What they found as they built things in Rust was that, yes, predictable performance is great, but the *real* win comes from the fact that things tend to "just work" more often than not.
+Here is that same Rust developer, continuing their statement. See what they are saying here? What they found as they built things in Rust was that, yes, predictable performance is great, but the *real* win comes from the fact that things tend to "just work" more often than not.
 
 ---
 
@@ -177,9 +177,11 @@ The answer is: experience. They've tried, and they found that when they build re
 ---
 
 .page-center[
-> We had a lot of ideas to improve performance, but we were hesitant to introduce them into critical systems given the risk of subtle bugs. With Rust, we achieved double-digit percentage performance improvements. **Rust’s type system gave us the confidence to make those optimizations without worry.**
-> <br/><br/>
-> .small[— Seth Markle, S3 Senior Principal Engineer, 2022]
+> We had a lot of ideas to improve performance, but we were hesitant to introduce them into critical systems given the risk of subtle bugs.<br><br>
+>
+> With Rust, we achieved up to double-digit percentage performance improvements. Rust’s type system provides a structure which we used to safely optimize our code.<br><br>
+>
+> .small[— Seth Markle, S3 Senior Principal Engineer, S3]
 ]
 
 ???
@@ -1073,7 +1075,7 @@ are just an ordinary library?
 .page-center[
 > We recently found a bug in our previous service written in Java. **It was caused by us using a closed object (like a dropped object in Rust, if we want to compare)**. Wouldn’t happen in Rust.
 > <br><br>
-> .small[— Lambda engineer, 2022]
+> .small[— Rust developer, 2022]
 ]
 
 ---
@@ -1081,7 +1083,7 @@ are just an ordinary library?
 .page-center[
 > Drop semantics are soooo nice for correctness. **We make heavy, heavy use of the pattern of vending tokens that carry some permission or capability that is released on drop.**
 > <br><br>
-> .small[— S3 engineer, 2022]
+> .small[— Rust developer, 2022]
 ]
 
 ---
