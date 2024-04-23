@@ -9,7 +9,7 @@ count: false
 .me[.grey[*by* **Nicholas Matsakis**]]
 
 .footnote[
-    Online on Github at [nikomatsakis/intro-to-rust.edu](https://github.com/nikomatsakis/ECE290-2023) -- in [rendered form too!](https://nikomatsakis.github.io/intro-to-rust.edu/)
+    Online on Github at [nikomatsakis/intro-to-rust.edu](https://github.com/nikomatsakis/intro-to-rust.edu) -- in [rendered form too!](https://nikomatsakis.github.io/intro-to-rust.edu/)
 ]
 
 ---
